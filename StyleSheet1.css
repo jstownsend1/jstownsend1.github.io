@@ -1,9 +1,13 @@
-﻿body
+body
 {
-   color: deeppink;
+   background-color: slategray;
 }
 nav 
 {
-    color: navy;
 
+
+}
+card1
+{
+    margin-left: ($spacer * .25);
 }
