@@ -1,0 +1,27 @@
+﻿body {
+    font-family: Georgia;
+    color: white;
+    background-color: white;
+}
+
+nav {
+    font-family: Georgia;
+    font-size: 25px;
+}
+card1
+{
+    margin-left: ($spacer * .25);
+}
+#resume{
+    width: 500px;
+    height: 500px;
+}
+#aboutmeparagraph {
+    font-size: 25px;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    border:medium;
+    border-color: crimson;
+}
