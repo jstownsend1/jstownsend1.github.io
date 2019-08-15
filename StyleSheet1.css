@@ -1,12 +1,17 @@
-﻿body {
-    font-family: Georgia;
+﻿
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body {
     color: white;
     background-color: white;
+    font-family: "Poppins",sans-serif;
 }
 
 nav {
-    font-family: Georgia;
+    font-family: "Poppins",sans-serif;
     font-size: 25px;
+    border: thin;
+    border-color: crimson;
 }
 card1
 {
@@ -24,4 +29,15 @@ card1
     margin-top: 3%;
     border:medium;
     border-color: crimson;
+}
+#profilePic{
+    width: 90px;
+    height: 160px;
+}
+.navbar-nav.navbar-center {
+    justify-content: center;
+}
+#intro{
+    margin-left:10px;
+    padding-left:10px;
 }
