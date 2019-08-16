@@ -2,16 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 body {
-    color: white;
+    color: lightblue;
     background-color: white;
     font-family: "Poppins",sans-serif;
 }
 
+
 nav {
     font-family: "Poppins",sans-serif;
     font-size: 25px;
-    border: solid;
-    border-color: floralwhite;
+}
+div {
+    color: lightblue;
 }
 card1
 {
@@ -40,4 +42,26 @@ card1
 #intro{
     margin-left:10px;
     padding-left:10px;
+}
+card{
+    height:80px;
+}
+#work{
+    font-size:70px;
+    font-weight:bold;
+    color:white;
+}
+#workCarousel{
+    align-self:center;
+    height:150px;
+}
+
+@media (min-width: 768px) {
+    .carousel .carousel-item img {
+        width: 1897px;
+        height: 750px;
+    }
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
 }
