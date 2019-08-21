@@ -4,13 +4,14 @@
 body {
     color: lightblue;
     background-color: white;
-    font-family: "Poppins",sans-serif;
+    font-family: "Palatino Linotype",sans-serif;
 }
 
 
 nav {
-    font-family: "Poppins",sans-serif;
+    font-family: "Palatino Linotype",sans-serif;
     font-size: 25px;
+    color:lightblue;
 }
 div {
     color: lightblue;
@@ -49,7 +50,7 @@ card{
 #work{
     font-size:70px;
     font-weight:bold;
-    color:white;
+    color:lightblue;
 }
 #workCarousel{
     align-self:center;
@@ -58,8 +59,8 @@ card{
 
 @media (min-width: 768px) {
     .carousel .carousel-item img {
-        width: 1897px;
-        height: 750px;
+        width: 1700px;
+        height: 650px;
     }
 }
 .carousel-inner > .item > img {
