@@ -7,7 +7,11 @@ body {
     font-family: "Palatino Linotype",sans-serif;
 }
 
-
+#myNav {
+    font-family: "Palatino Linotype",sans-serif;
+    font-size: 25px;
+    color: lightblue;
+}
 nav {
     font-family: "Palatino Linotype",sans-serif;
     font-size: 25px;
@@ -59,10 +63,14 @@ card{
 
 @media (min-width: 768px) {
     .carousel .carousel-item img {
-        width: 1700px;
-        height: 650px;
+        width: 1400px;
+        height: 500px;
     }
 }
 .carousel-inner > .item > img {
     margin: 0 auto;
+}
+.carousel-item{
+    font-family: 'Palatino Linotype';
+    color:lightblue;
 }
