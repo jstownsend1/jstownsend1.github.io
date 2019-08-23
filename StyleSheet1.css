@@ -75,13 +75,12 @@ card{
     color:lightblue;
 }
 #workContainer{
-    margin-top:25px;
-    height:400px;
+    margin-top:35px;
 }
 @keyframes fade-in {
     from {
         opacity: 0;
-        transform: scale(.7,.7)
+        transform: scale(.6,.6)
     }
 
     to {
@@ -95,5 +94,6 @@ card{
 .hidden {
     opacity: 0;
 }
+
 
 

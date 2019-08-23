@@ -72,8 +72,7 @@
         <h1 id="work" style="text-align:center; color:lightblue;">
             My Work
         </h1>
-        <br />
-        <div class="bd-example" style="width:95%; text-align:center; margin-left:2.5%">
+        <!--<div class="bd-example" style="width:95%; text-align:center; margin-left:2.5%">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -129,48 +128,58 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </div>
+        </div>-->
     </div>
 
     <div class="container workContainer" style="margin-top:25px;">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="card mb-3 hidden">
                 <img src="https://jstownsend1.github.io/TheHubHomePageCapture.JPG" class="card-img-top" alt="Picture of website seth created">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="card-body bg-dark">
+                    <h5 class="card-title">Newport Academy Intranet Site</h5>
+                    <p class="card-text">I built this website out while in my internship at Newport Academy and it is still in use over a year later</p>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-end">
+        <div class="row justify-content-center">
             <div class="card mb-3 hidden">
-                <img src="https://jstownsend1.github.io/TheHubHomePageCapture.JPG" class="card-img-top" alt="Picture of website seth created">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <img src="https://jstownsend1.github.io/TheHubHomePageCapture2.JPG" class="card-img-top" alt="Picture of website seth created">
+                <div class="card-body bg-dark">
+                    <h5 class="card-title">Newport Academy Intranet Site</h5>
+                    <p class="card-text">I built this website out while in my internship at Newport Academy and it is still in use over a year later</p>
                 </div>
             </div>
         </div>
-        <div class="row ">
+        <div class="row justify-content-center">
             <div class="card mb-3 hidden">
-                <img src="https://jstownsend1.github.io/TheHubHomePageCapture.JPG" class="card-img-top" alt="Picture of website seth created">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <img src="https://jstownsend1.github.io/main.PNG" class="card-img-top" alt="Picture of website seth created">
+                <div class="card-body bg-dark">
+                    <h5 class="card-title">Book Rental System</h5>
+                    <p class="card-text">Functionality of adding, editing, deleting, renting, and returning books. Also some reporting features</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="card mb-3 hidden">
+                <img src="https://jstownsend1.github.io/add.PNG" class="card-img-top" alt="Picture of website seth created">
+                <div class="card-body bg-dark">
+                    <h5 class="card-title">Book Rental System</h5>
+                    <p class="card-text">Functionality of adding, editing, deleting, renting, and returning books. Also some reporting features</p>
                 </div>
             </div>
         </div>
 
+        <div class="row justify-content-center hidden">
+            <video muted style="width:80%; text-align:center;" controls="controls" src="https://jstownsend1.github.io/FinalFootballGame.mp4">
+                Your browser does not support the HTML5 Video element.
+            </video>
+            <h4 style="width:80%; text-align:center;">This is a video of a project I completed for my MIS 220 course. 
+                                                                       It was a bonus project and I was selected by the professor as the 'best design' 
+                                                                       for a project and recieved exemption from the exam. This is a windows form app 
+                                                                       that has all the back-end logic written in C#.
+            </h4>
+        </div>
     </div>
-
-    <div style="margin-top:10px;style=" width:80%; text-align:center; margin-left:10%;">
-        <br /><br />
-        <h2 style="width:80%; text-align:center; margin-left:10%;">This is a video of a project I completed for my MIS 220 course. It was a bonus project and I was selected by the professor as the 'best design' for a project and recieved exemption from the exam. This is a windows form app that has all the back-end logic written in C#.</h2>
-        <video muted style="width:80%; text-align:center; margin-left:10%;" controls="controls" src="https://jstownsend1.github.io/FinalFootballGame.mp4">
-            Your browser does not support the HTML5 Video element.
-        </video>
-    </div>
-
 </body>
 
 
@@ -192,7 +201,7 @@
         function checkPosition() {
             for (var i = 0; i < elems.length; i++) {
                 var positionFromTop = elems[i].getBoundingClientRect().top;
-                if (positionFromTop - windowHeight <= 0) {
+                if (positionFromTop - windowHeight +(windowHeight/3) <= 0) {
                     elems[i].className = elems[i].className.replace(
                         'hidden',
                         'fade-in-element'
