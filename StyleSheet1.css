@@ -3,8 +3,10 @@
 
 body {
     color: lightblue;
-    background-color: white;
     font-family: "Palatino Linotype",sans-serif;
+}
+p{
+    color: lightblue;
 }
 
 #myNav {
@@ -30,7 +32,7 @@ card1
 }
 #aboutmeparagraph {
     font-size: 25px;
-    color: black;
+    color: lightblue;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 3%;
