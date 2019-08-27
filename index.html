@@ -173,7 +173,7 @@
 
         <div class="card-deck" style="border-top:solid; padding-top:15px;">
             <div class="card hidden">
-                <img id="flowchartImg" src="https://jstownsend1.github.io/flowchartPA3.PNG" class="myImg card-img-top" alt="Picture of website seth created">
+                <img id="flowchartImg" onclick="onClick(this)" src="https://jstownsend1.github.io/flowchartPA3.PNG" class="myImg card-img-top exapndable" alt="Picture of website seth created">
                 <div class="card-body bg-dark">
                     <h5 class="card-title">Babysitting Game</h5>
                     <p class="card-text">This was a program I created for a school project. This flowchart shows the logic of the program</p>
@@ -181,7 +181,7 @@
             </div>
 
             <!-- The Modal -->
-            <div id="myModal" class="modal">
+            <div id="myModal" class="modal" onclick="this.style.display='none'">
 
                 <!-- The Close Button -->
                 <span class="close">&times;</span>
@@ -194,14 +194,14 @@
             </div>
 
             <div class="card hidden">
-                <img src="https://jstownsend1.github.io/1.PNG" class="card-img-top" alt="Picture of website seth created">
+                <img src="https://jstownsend1.github.io/1.PNG" onclick="onClick(this)" class="card-img-top exapndable" alt="Picture of website seth created">
                 <div class="card-body bg-dark">
                     <h5 class="card-title">Babysitting Game</h5>
                     <p class="card-text">This menu shows the three games that you, as the babysitter, can play to tire out the children</p>
                 </div>
             </div>
             <div class="card hidden">
-                <img src="https://jstownsend1.github.io/PickUpSticks.PNG" class="card-img-top" alt="Picture of website seth created">
+                <img src="https://jstownsend1.github.io/PickUpSticks.PNG" onclick="onClick(this)" class="card-img-top exapndable" alt="Picture of website seth created">
                 <div class="card-body bg-dark">
                     <h5 class="card-title">Babysitting Game</h5>
                     <p class="card-text">This is the Pick Up Sticks game</p>
@@ -210,21 +210,21 @@
         </div>
         <div class="card-deck">
             <div class="card hidden">
-                <img src="https://jstownsend1.github.io/MotherMayI.PNG" class="card-img-top" alt="Picture of website seth created">
+                <img src="https://jstownsend1.github.io/MotherMayI.PNG" onclick="onClick(this)" class="card-img-top exapndable" alt="Picture of website seth created">
                 <div class="card-body bg-dark">
                     <h5 class="card-title">Babysitting Game</h5>
                     <p class="card-text">This is the Mother May I game</p>
                 </div>
             </div>
             <div class="card hidden">
-                <img src="https://jstownsend1.github.io/RockPaperScissors.PNG" class="card-img-top" alt="Picture of website seth created">
+                <img src="https://jstownsend1.github.io/RockPaperScissors.PNG" onclick="onClick(this)" class="card-img-top exapndable" alt="Picture of website seth created">
                 <div class="card-body bg-dark">
                     <h5 class="card-title">Babysitting Game</h5>
                     <p class="card-text">This is the Rock, Paper, Scissors game</p>
                 </div>
             </div>
             <div class="card hidden">
-                <img src="https://jstownsend1.github.io/scoreboard.PNG" class="card-img-top" alt="Picture of website seth created">
+                <img src="https://jstownsend1.github.io/scoreboard.PNG" onclick="onClick(this)" class="card-img-top exapndable" alt="Picture of website seth created">
                 <div class="card-body bg-dark">
                     <h5 class="card-title">Babysitting Game</h5>
                     <p class="card-text">This is the scoreboard for the game after all the games shown has been played a few times</p>
@@ -233,14 +233,14 @@
         </div>
         <div class="card-deck">
             <div class="card hidden">
-                <img src="https://jstownsend1.github.io/SaveGame.PNG" class="card-img-top" alt="Picture of website seth created">
+                <img src="https://jstownsend1.github.io/SaveGame.PNG" onclick="onClick(this)" class="card-img-top exapndable" alt="Picture of website seth created">
                 <div class="card-body bg-dark">
                     <h5 class="card-title">Babysitting Game</h5>
                     <p class="card-text">When the game ends you are shown this game summary, and given the option to save your game</p>
                 </div>
             </div>
             <div class="card hidden">
-                <img src="https://jstownsend1.github.io/Resume.PNG" class="card-img-top" alt="Picture of website seth created">
+                <img src="https://jstownsend1.github.io/Resume.PNG" onclick="onClick(this)" class="card-img-top exapndable" alt="Picture of website seth created">
                 <div class="card-body bg-dark">
                     <h5 class="card-title">Babysitting Game</h5>
                     <p class="card-text">The game will save your progress and let you resume when you get back</p>
@@ -299,23 +299,9 @@
 
     
 
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("flowchartImg");
-    var modalImg = document.getElementById("img01");
-    img.onclick = function () {
-        modal.style.display = "block";
-        modalImg.src = this.src;
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("myModal").style.display = "block";
     }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    } 
 
 </script>
