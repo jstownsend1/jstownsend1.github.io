@@ -115,7 +115,7 @@ card{
 * {box-sizing:border-box}
 
 /* Container for skill bars */
-.container {
+.skillsContainer {
   width: 100%; /* Full width */
   background-color: #ddd; /* Grey background */
 }
