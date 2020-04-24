@@ -22,8 +22,30 @@ nav {
 div {
     color: #fff;
 }
+.nav-item:hover{
+    border-bottom: 2px solid #3f51b5;
+}
+.email{
+    padding:10px; color:#fff;
+}
+.email:hover{
+    color: gray;
+    transition: ease 0.2s;
+    cursor: pointer;
+}
 .workLink{
     justify-content: center;
+}
+.learnAboutMe{
+    margin-left:30px; 
+    margin-top:20px; 
+    margin-bottom:20px; 
+    background-color:#fff; 
+}
+.learnAboutMe:hover{
+    background-color: gray;
+    transition: ease 0.2s;
+    cursor: pointer;
 }
 card1
 {
