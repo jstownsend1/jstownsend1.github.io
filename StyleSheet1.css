@@ -2,29 +2,32 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 body {
-    color: lightblue;
+    color: #fff;
     font-family: "Palatino Linotype",sans-serif;
 }
 p{
-    color: lightblue;
+    color: #fff;
 }
 
 #myNav {
     font-family: "Palatino Linotype",sans-serif;
     font-size: 25px;
-    color: lightblue;
+    color: #fff;
 }
 nav {
     font-family: "Palatino Linotype",sans-serif;
     font-size: 25px;
-    color:lightblue;
+    color:#fff;
 }
 div {
-    color: lightblue;
+    color: #fff;
+}
+.workLink{
+    justify-content: center;
 }
 card1
 {
-    margin-left: ($spacer * .25);
+    margin-left: ('$spacer' * .25);
 }
 #resume{
     width: 500px;
@@ -32,7 +35,7 @@ card1
 }
 #aboutmeparagraph {
     font-size: 25px;
-    color: lightblue;
+    color: #fff;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 3%;
@@ -56,7 +59,7 @@ card{
 #work{
     font-size:70px;
     font-weight:bold;
-    color:lightblue;
+    color:#fff;
 }
 #workCarousel{
     align-self:center;
@@ -74,7 +77,7 @@ card{
 }
 .carousel-item{
     font-family: 'Palatino Linotype';
-    color:lightblue;
+    color:#fff;
 }
 #workContainer{
     margin-top:35px;
@@ -133,21 +136,21 @@ card{
 
 .html {
     width: 90%;
-    background-color: #4CAF50;
+    background-color: #fff;
 }
 /* Green */
 .css {
     width: 80%;
-    background-color: #2196F3;
+    background-color: #fff;
 }
 /* Blue */
 .js {
     width: 65%;
-    background-color: #f44336;
+    background-color: #fff;
 }
 /* Red */
 .php {
     width: 60%;
-    background-color: #808080;
+    background-color: #fff;
 }
 /* Dark Grey */
