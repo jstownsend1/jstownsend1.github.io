@@ -33,6 +33,9 @@ div {
     transition: ease 0.2s;
     cursor: pointer;
 }
+.nav-item{
+    margin-right: 5px;
+}
 .workLink{
     justify-content: center;
 }
@@ -68,10 +71,37 @@ card1
     width: 90px;
     height: 160px;
 }
+#recommendations-div{
+    margin-top: 50px;
+    
+    /* color:  #3f51b5; */
+}
+.body-margin{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+#about-me-title{
+    margin-top: 40px;
+}
+.quote{
+font-size: xx-large;
+  margin-top: 80px;
+  position: relative;
+  font-family: 'Sanchez', serif;
+  font-style: italic;
+}
+.quote-color{
+    color: #6477e3;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
 .navbar-nav.navbar-center {
     justify-content: center;
 }
 #intro{
+    margin-top:30px;
     margin-left:10px;
     padding-left:10px;
 }

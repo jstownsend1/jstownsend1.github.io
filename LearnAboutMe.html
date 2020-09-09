@@ -9,13 +9,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="C:\Users\towns\OneDrive - The University of Alabama\Personal Info and Forms\WebsiteStyleSheet1.css">
+    <link rel="stylesheet" href="./StyleSheet1.css">
     <link rel="stylesheet" href="https://jstownsend1.github.io/StyleSheet1.css">
 
     <title>Learn About Me</title>
 
 </head>
-<body class="bg-dark">
+<body class="bg-dark body-margin">
 
     <nav class="myNav navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <!--<a class="navbar-brand" href="https://jstownsend1.github.io/"><img src="https://jstownsend1.github.io/ST2.png" width="40" height="40" alt="" /> Seth Townsend</a>-->
@@ -31,6 +31,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="https://jstownsend1.github.io/LearnAboutMe.html" style="color:#fff;">About Me<span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="https://jstownsend1.github.io/recommendations.html" style="color:#fff;">Recommendations<span class="sr-only">(current)</span></a>
+              </li>
                 <li class="nav-item active">
                     <a class="nav-link"href="https://jstownsend1.github.io/ResumePage.html" style="color:#fff;">Resume<span class="sr-only">(current)</span></a>
                 </li>
@@ -51,9 +54,9 @@
         </div>
     </nav>
 
-
+    <h2 id="about-me-title" class="center">Get to know me a little better</h2>
     <div style="display:flex;">
-        <blockquote id="aboutmeparagraph" class="blockquote bg-dark">
+        <blockquote id="aboutmeparagraph" class="blockquote bg-dark hidden">
             <p class="mb-0">
                 I am a recent graduate of the Management Information Systems program at Alabama and as much as I try to hide it, a technology nerd down to the core.
                 I have always been fascinated with the power of technology and the ability to use it to work alongside me in solving problems and creating new possibilities.
@@ -61,8 +64,8 @@
                 Whether that be in my school projects, my work assignments, or in my relationships, that joy propels me to step
                 into more exciting, challenging, and rewarding situations everyday.
             </p>
-
         </blockquote>
+        
         <!--<div id="skillsContainer" class="bg-dark" style="margin-left:10px;min-width:40%; ">
             <h2 style="display:flex">
                 Technical Skills
@@ -87,10 +90,12 @@
                 <div class="skills php">40%</div>
             </div>
         </div>-->
+        
     </div>
+    
     <p class="bg-dark" style="text-align:center;font-size:35px; border-bottom: solid"><br />Interest and Hobbies</p>
 
-    <div class="card-deck p-3 mb-2 bg-dark" style="margin-left: 3%; margin-right: 3%; margin-top: 2%;">
+    <div class="card-deck p-3 mb-2 bg-dark hidden" style="margin-left: 3%; margin-right: 3%; margin-top: 2%;">
 
         <div class="card p-3 mb-2 bg-dark" style="border-color: white">
             <img class="card-img-top" src="https://jstownsend1.github.io/Investing.jpeg" alt="Card image cap">
@@ -169,8 +174,8 @@
             }
           </style>
           <h2 style="text-align: center;">My Bookshelf</h2>          
-          <h4 style="text-align: center;">Please take a look at my goodreads bookshelf and give me reccomendations as well!</h4>          
-
+          <h4 style="text-align: center;">Please take a look at my goodreads bookshelf and send me recommendations as well!</h4>          
+            <div class="hidden">
                 <div id="gr_custom_widget_1587684492" style="margin-left: 40%;">
                     <div class="gr_custom_container_1587684492">
               <h2 class="gr_custom_header_1587684492">
@@ -212,6 +217,7 @@
                       currently-reading
                     </div>
                 </div>
+              </div>
             <br style="clear: both"/>
             <center>
               <a rel="nofollow" href="https://www.goodreads.com/"><img alt="goodreads.com" style="border:0" src="https://www.goodreads.com/images/widget/widget_logo.gif" /></a>
@@ -239,7 +245,7 @@
                     }
                   </style>
                   <h2 style="padding-top:10px; text-align: center;">Some of my read books</h2>
-                  <div id="gr_grid_widget_1587695778">
+                  <div id="gr_grid_widget_1587695778" class="hidden">
                     <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
                         <h2>
                   <a style="text-decoration: none; text-align: center;" rel="nofollow" href="https://www.goodreads.com/review/list/87311876-seth-townsend?shelf=read&utm_medium=api&utm_source=grid_widget">Seth's read book montage</a>
@@ -274,3 +280,43 @@
             
 </body>
 </html>
+
+<script>
+  var animateHTML = function () {
+      var elems;
+      var windowHeight;
+      function init() {
+          elems = document.querySelectorAll('.hidden');
+          windowHeight = window.innerHeight;
+          addEventHandlers();
+          checkPosition();
+      }
+      function addEventHandlers() {
+          window.addEventListener('scroll', checkPosition);
+          window.addEventListener('resize', init);
+      }
+      function checkPosition() {
+          for (var i = 0; i < elems.length; i++) {
+              var positionFromTop = elems[i].getBoundingClientRect().top;
+              if (positionFromTop - windowHeight +(windowHeight/8) <= 0) {
+                  elems[i].className = elems[i].className.replace(
+                      'hidden',
+                      'fade-in-element'
+                  );
+              }
+          }
+      }
+      return {
+          init: init
+      };
+  };
+  animateHTML().init();
+
+  
+
+  function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("myModal").style.display = "block";
+  }
+
+</script>
