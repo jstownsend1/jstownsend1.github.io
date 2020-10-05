@@ -80,6 +80,9 @@ card1
     margin-left: 60px;
     margin-right: 60px;
 }
+.navbar-collapse.in {
+    display: block !important;
+}
 #about-me-title{
     margin-top: 40px;
 }
