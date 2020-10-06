@@ -67,10 +67,7 @@ card1
     border:medium;
     border-color: crimson;
 }
-#profilePic{
-    width: 90px;
-    height: 160px;
-}
+
 #recommendations-div{
     margin-top: 50px;
     
@@ -209,3 +206,86 @@ card{
     background-color: #fff;
 }
 /* Dark Grey */
+
+#gr_custom_widget_1587684492{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+@media screen and (max-width: 600px){
+    #profilePic{
+        width: 150px !important;
+        height: 225px !important;
+    }
+    #name{
+        font-size: 1rem !important;
+    }
+    #intro_to_me{
+        font-size: 19px !important;
+    }
+    #email{
+        font-size: 1rem !important;
+    }
+    #work{
+        font-size: 2rem !important;
+    }
+    .card{
+        max-width: 80%;
+        font-size: 10px !important;
+    }
+    .vp-center{
+        max-width: 80% !important;
+    }
+    .vp-video-wrapper{
+        max-width: 80% !important;
+    }
+    .video{
+        max-width: 80% !important;
+        padding-left: 10%;
+    }
+    h4,h2{
+        font-size: 1rem;
+    }
+    .myNav{
+        line-height: 1;
+        font-size: 1rem;
+    }
+    #about-me-title{
+        font-size: 1rem;
+    }
+    #aboutmeparagraph{
+        font-size: 14px !important;
+    }
+    p{
+        font-size: 16px;
+    }
+    .quote{
+        margin-top: 20px !important;
+        font-size: smaller !important;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    #profilePic{
+        width: 100px !important;
+        height: 150px !important;
+    }
+    #name{
+        font-size: 1rem !important;
+    }
+    #intro_to_me{
+        font-size: 13px !important;
+    }
+    
+}
+@media screen and (max-width: 1000px){
+    .aboutmecards{
+        min-width: 290px;
+    }
+    .body-margin{
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+}
