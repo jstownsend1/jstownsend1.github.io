@@ -289,15 +289,6 @@ card{
 .hidden {
     opacity: 0;
 }
-#jira-pic{
-    width:245px !important;
-    height: 150px !important;
-    max-width:245px !important;
-}
-#goal-pic{
-    width:245px !important;
-    max-width:245px !important;
-}
 
 
 
