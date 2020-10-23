@@ -400,6 +400,14 @@ card{
     }
 }
 @media screen and (max-width: 600px){
+    .jira-pic{
+        width:245px;
+        max-width:245px;
+    }
+    .goal-pic{
+        width:245px;
+        max-width:245px;
+    }
     #profilePic{
         width: 150px !important;
         height: 225px !important;
@@ -479,12 +487,7 @@ card{
     }
 }
 @media screen and (max-width: 450px){
-    .jira-pic{
-        max-width:245px;
-    }
-    .goal-pic{
-        max-width:245px;
-    }
+    
     #profilePic{
         width: 100px !important;
         height: 150px !important;
