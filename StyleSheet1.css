@@ -289,12 +289,12 @@ card{
 .hidden {
     opacity: 0;
 }
-.jira-pic{
+#jira-pic{
     width:245px !important;
     height: 150px !important;
     max-width:245px !important;
 }
-.goal-pic{
+#goal-pic{
     width:245px !important;
     max-width:245px !important;
 }
@@ -409,12 +409,12 @@ card{
 }
 
 @media screen and (max-width: 600px){
-    .jira-pic{
+    #jira-pic{
         width:245px !important;
         height: 150px !important;
         max-width:245px !important;
     }
-    .goal-pic{
+    #goal-pic{
         width:245px !important;
         max-width:245px !important;
     }
