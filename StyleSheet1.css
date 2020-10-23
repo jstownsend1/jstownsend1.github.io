@@ -479,6 +479,9 @@ card{
     }
 }
 @media screen and (max-width: 450px){
+    .jira-pic .goal-pic{
+        width:245px;
+    }
     #profilePic{
         width: 100px !important;
         height: 150px !important;
