@@ -401,12 +401,13 @@ card{
 }
 @media screen and (max-width: 600px){
     .jira-pic{
-        width:245px;
-        max-width:245px;
+        width:245px !important;
+        height: 150px !important;
+        max-width:245px !important;
     }
     .goal-pic{
-        width:245px;
-        max-width:245px;
+        width:245px !important;
+        max-width:245px !important;
     }
     #profilePic{
         width: 150px !important;
