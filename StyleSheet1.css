@@ -183,6 +183,7 @@ card1
     align-items: center;
     flex-wrap: wrap;
     margin-top:5%;
+    margin-bottom:5%;
     font-family: "Open Sans";
 }
 .circle svg {
@@ -400,14 +401,11 @@ card{
 }
 
 @media screen and (max-width: 600px){
-    #jira-pic{
-        width:245px !important;
-        height: 150px !important;
-        max-width:245px !important;
-    }
+    #jira-pic{      
+        content:url("./jira-mini.jpg");
+    } 
     #goal-pic{
-        width:245px !important;
-        max-width:245px !important;
+        content:url("./goal-mini.jpg");
     }
     #profilePic{
         width: 150px !important;
