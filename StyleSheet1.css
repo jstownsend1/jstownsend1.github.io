@@ -380,6 +380,11 @@ card{
     border: solid;
     border-color: red;
 }
+.hermes-outline{
+    margin: 10%;
+    border: solid;
+    border-color: #01252c;
+}
 .company-logo{
     width: 200px;
     margin-top: 2%;
